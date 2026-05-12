@@ -1,1 +1,0 @@
-# Octofit Tracker Django app package
