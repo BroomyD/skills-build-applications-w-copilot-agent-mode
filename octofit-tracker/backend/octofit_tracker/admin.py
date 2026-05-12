@@ -1,0 +1,1 @@
+# Admin configuration for Octofit Tracker models.
