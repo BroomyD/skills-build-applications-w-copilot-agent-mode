@@ -33,7 +33,7 @@ function Activities() {
     setLoading(true);
     const comp = 'activities';
     const codespace = process.env.REACT_APP_CODESPACE_NAME;
-    const url = codespace ? `https://${codespace}-8000.app.github.dev/api/${comp}/` : `${window.location.protocol}//${window.location.host}/api/${comp}/`;
+    const url = codespace ? `https://${codespace}-8000.app.github.dev/api/activities/` : `${window.location.protocol}//${window.location.host}/api/activities/`;
     console.log('Fetching Activities from', url);
     fetch(url).then((r) => r.json()).then((data) => {
       console.log('Activities response:', data);

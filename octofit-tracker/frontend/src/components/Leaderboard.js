@@ -33,7 +33,7 @@ function Leaderboard() {
     setLoading(true);
     const comp = 'leaderboard';
     const codespace = process.env.REACT_APP_CODESPACE_NAME;
-    const url = codespace ? `https://${codespace}-8000.app.github.dev/api/${comp}/` : `${window.location.protocol}//${window.location.host}/api/${comp}/`;
+    const url = codespace ? `https://${codespace}-8000.app.github.dev/api/leaderboard/` : `${window.location.protocol}//${window.location.host}/api/leaderboard/`;
     console.log('Fetching Leaderboard from', url);
     fetch(url).then((r) => r.json()).then((data) => {
       console.log('Leaderboard response:', data);

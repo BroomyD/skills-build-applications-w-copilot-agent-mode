@@ -33,7 +33,7 @@ function Workouts() {
     setLoading(true);
     const comp = 'workouts';
     const codespace = process.env.REACT_APP_CODESPACE_NAME;
-    const url = codespace ? `https://${codespace}-8000.app.github.dev/api/${comp}/` : `${window.location.protocol}//${window.location.host}/api/${comp}/`;
+    const url = codespace ? `https://${codespace}-8000.app.github.dev/api/workouts/` : `${window.location.protocol}//${window.location.host}/api/workouts/`;
     console.log('Fetching Workouts from', url);
     fetch(url).then((r) => r.json()).then((data) => {
       console.log('Workouts response:', data);

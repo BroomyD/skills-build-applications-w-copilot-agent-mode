@@ -55,8 +55,8 @@ function Users() {
     const comp = 'users';
     const codespace = process.env.REACT_APP_CODESPACE_NAME;
     const url = codespace
-      ? `https://${codespace}-8000.app.github.dev/api/${comp}/`
-      : `${window.location.protocol}//${window.location.host}/api/${comp}/`;
+      ? `https://${codespace}-8000.app.github.dev/api/users/`
+      : `${window.location.protocol}//${window.location.host}/api/users/`;
     console.log('Fetching Users from', url);
 
     fetch(url)
